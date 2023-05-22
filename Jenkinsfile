@@ -9,7 +9,8 @@ pipeline {
                         sh 'pwd'
 		        sh '/usr/local/bin/helm upgrade --install petclinic-app petclinic  --set image.registry.hub.docker.com/dockerid9848/petclinic --set image.tag=latest'
               			
-            }           
+
+	    }           
         }
     }
 }
